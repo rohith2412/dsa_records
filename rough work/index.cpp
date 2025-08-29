@@ -1,18 +1,13 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
-
 
 int main() {
 
-    vector<string> s = {"h","e","l","l","o"};
+    std::vector<int> nums = {2,3,4,5};
 
-
-    for (int i = s.size() - 1; i >= 0; i--) {
-        cout << s[i] << ",";
-
+    for(int i = 0; i< nums.size(); i++) {
+        std::cout << nums[i] << " ";
     }
-    cout << endl;
+    return 0;
 }
-
