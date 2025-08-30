@@ -1,13 +1,21 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
+// Length of Last Word
 
 int main() {
 
-    std::vector<int> nums = {2,3,4,5};
+    string s = "vascode gama";
 
-    for(int i = 0; i< nums.size(); i++) {
-        std::cout << nums[i] << " ";
+    int length = 0;
+    int i = s.size() - 1;
+
+    while(i>=0 && s[i] != ' ') {
+        length++;
+        i--;
     }
-    return 0;
+       
+    cout << length;
+
 }
