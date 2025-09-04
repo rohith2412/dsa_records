@@ -2,20 +2,12 @@
 #include <vector>
 using namespace std;
 
-// Length of Last Word
+vector<string> names = {"Mary","John","Emma"};
+vector<int> heights = {180,165,170};
 
 int main() {
-
-    string s = "vascode gama";
-
-    int length = 0;
-    int i = s.size() - 1;
-
-    while(i>=0 && s[i] != ' ') {
-        length++;
-        i--;
+    for(int i=0; i<names.size(); i++) {
+        cout << names[i] << " : " << heights[i] << endl;
     }
-       
-    cout << length;
-
+    return 0;
 }
