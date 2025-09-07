@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm> 
-using namespace std;
+//Longest Common Prefix Problem
 
 class Solution {
 public:
@@ -24,12 +21,5 @@ public:
     }
 };
 
-int main() {
-    Solution sol;
-    vector<string> strs = {"rock", "roc", "ro"};
 
-    string result = sol.longestCommonPrefix(strs);
-    cout << "Longest Common Prefix: " << result << endl;
-
-    return 0;
-}
+//explanation:
